@@ -1,0 +1,1 @@
+this code redirect ```https://itsupporteng.com/``` to ```https://mushfiq.xyz/```
