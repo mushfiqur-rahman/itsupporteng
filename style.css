@@ -1,0 +1,90 @@
+:root {
+  --bg-color: #0a0b10;
+  --accent-color: #00f2ff;
+  --text-light: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-light);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container {
+  z-index: 2;
+  padding: 20px;
+}
+
+/* Logo & Text */
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.logo span {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Countdown Styles */
+#countdown ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 2rem 0;
+}
+#countdown li {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 90px;
+  border-bottom: 3px solid var(--accent-color);
+}
+#countdown span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+/* Form */
+input[type="email"] {
+  padding: 12px 20px;
+  width: 250px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+button {
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  background: var(--accent-color);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--accent-color);
+}
